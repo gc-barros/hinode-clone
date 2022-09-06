@@ -1,0 +1,85 @@
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  padding-bottom: 50px;
+  justify-content: center;
+  gap: 65px;
+  padding-top: 50px;
+  margin-bottom: 64px;
+
+  a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -12px;
+    right: 94px;
+    text-decoration: underline;
+    gap: 6px;
+
+    &::before {
+      content: url(/src/assets/icons/olho.svg);
+      margin-bottom: -6px;
+    }
+  }
+
+  .carouselButton {
+    background: url(/src/assets/icons/arrow.svg);
+    width: 24px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 143px;
+
+    &:first-of-type {
+      transform: rotate(180deg);
+    }
+
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1138px;
+    width: 100%;
+    margin: auto;
+    transition: .4s ease;
+  }
+}
+
+.indicators {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  li {
+    border-radius: 10px;
+    border: 1px solid #AA8232;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    &.active {
+      background-color: #AA8232;
+      width: 22px;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+.top {
+  background-color: #F8F8F8;
+  font-size: 10px;
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 37px;
+    max-width: 1141px;
+    margin: auto;
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      a:first-child {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+          background: url(/src/assets/icons/consultor.svg) no-repeat center / contain;
+        }
+      }
+    }
+  }
+}
+
+.mid {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.midWrapper {
+  height: 90px;
+  max-width: 1141px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-width: 216px;
+  }
+
+  .search {
+    margin: 0 26px 0 88px;
+    background-color: rgba(225, 220, 213, 0.5);
+    border-radius: 100px;
+    height: 37px;
+    width: 100%;
+    max-width: 399px;
+    padding: 9px 40px 9px 23px;
+    position: relative;
+    
+    input {
+      border: 0;
+      font-size: 12px;
+      outline: 0;
+      background: transparent;
+      width: 100%;
+
+      &::-webkit-search-cancel-button{
+        display: none; 
+      }
+
+      &::placeholder {
+        font-weight: 600;
+        color: #333;
+      }
+    }
+
+    &::after {
+      content: url(/src//assets/icons/search.svg);
+      position: absolute;
+      right: 19px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: -5px;
+
+    li {
+      display: flex;
+      position: relative;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li:nth-child(1) {
+      &::before {
+        content: url(/src/assets/icons/visitante.svg);
+        margin-right: 7px;
+      }
+
+      &::after {
+        content: 'Olá Visitante,';
+        position: absolute;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 22px;
+        top: -14px;
+        left: 24px;
+        text-transform: none;
+      }
+    }
+
+    li:nth-child(2) {
+      &::before {
+        content: url(/src/assets/icons/favoritos.svg);
+        margin-right: 11px;
+        margin-bottom: -6px;
+      }
+    }
+
+    li:nth-child(3) {
+      &::before {
+        content: url(/src/assets/icons/sacola.svg);
+        margin-right: 11px;
+      }
+    }
+  }
+}
+
+.bottom {
+  height: 49px;
+  background-color: #AA8232;
+  display: flex;
+  align-items: center;
+  
+  .wrapper {
+    max-width: 1141px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    button {
+      background: transparent;
+      border: 0;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+
+      &::before {
+        content: url(/src/assets/icons/Hamburguer.svg);
+        margin-bottom: -6px;
+      }
+    }
+    
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin-left: 72px;
+      gap: 79px;
+      
+      li {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

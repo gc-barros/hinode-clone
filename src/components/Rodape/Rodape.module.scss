@@ -1,0 +1,145 @@
+.container {
+  background-color: #E1DCD5;
+
+  .receba {
+    background-color: #00002D;
+    height: 152px;
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      max-width: 1101px;
+      margin: auto;
+
+      h3 {
+        font-family: 'Aktiv Grotesk Ex';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: #FFF;
+        max-width: 422px;
+      }
+
+      input {
+        border: 0;
+        border-bottom: 1px solid #FFF;
+        width: 207px;
+        background: transparent;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 23px;
+        margin-left: 62px;
+        outline: 0;
+        color: #FFF;
+        
+        &::placeholder {
+          font-weight: 400;
+          color: #FFF;
+        }
+
+        &:last-of-type {
+          width: 237px;
+          margin-left: 21px;
+          margin-right: 25px;
+        }
+      }
+
+      button {
+        width: 130px;
+        height: 48px;
+        border: 0;
+        background-color: #009BAA;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .links {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 89px;
+    max-width: 1140px;
+    margin: auto;
+    width: 100%;
+    padding: 77px 0 143px 0;
+    
+    ul {
+      list-style: none;
+
+      &:first-of-type {
+        width: 170px;
+      }
+
+      li:not(li:first-of-type):hover {
+        text-decoration: underline;
+      }
+    }
+
+    ul > li:first-of-type {
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+  }
+
+  aside {
+    text-align: right;
+
+    button {
+      background-color: #009BAA;
+      border: 0;
+      cursor: pointer;
+      width: 221px;
+      height: 48px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+
+    .social {
+      margin-top: 30px;
+      display: flex;
+      gap: 16px;
+      justify-content: flex-end;
+    }
+  }
+
+  .last {
+    background-color: #FFF;
+    
+    .wrapper {
+      padding-bottom: 206px;
+      max-width: 1440px;
+      margin: auto;
+    }
+    
+    img {
+      width: 100%;
+    }
+  }
+}

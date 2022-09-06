@@ -1,0 +1,172 @@
+.container {
+  height: 790px;
+  background-color: #D5B69A;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1273px;
+  padding-top: 182px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  
+  h1 {
+    font-family: 'Playfair Display', sans-serif;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 100%;
+    letter-spacing: -3px;
+    max-width: 513px;
+    margin: 0 0 31px auto;
+  }
+
+  button {
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    max-width: 171px;
+    height: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 329px;
+    display: block;
+    cursor: pointer;
+    transition: .4s ease;
+  }
+}
+
+.imgWrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1306px;
+  overflow: hidden;
+} 
+
+.imgList {
+  margin-left: -36px;
+  list-style-type: none;
+  display: flex;
+  gap: 64px;
+  transition: .4s ease;
+
+  img {
+    margin-bottom: -2px;
+  }
+}
+
+.carousel {
+  position: absolute;
+  top: 375px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    background: url(/src/assets/icons/arrow.svg);
+    filter: brightness(0) invert(1);
+    width: 24px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+
+    &:first-of-type {
+      transform: rotate(180deg);
+    }
+
+  }
+}
+
+.indicators {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  z-index: 4;
+  bottom: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  li {
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    &.active {
+      background-color: #FFF;
+      width: 22px;
+    }
+  }
+}
+
+.benefits {
+  background-color: #F5F6FA;
+  height: 117px;
+  display: grid;
+  place-content: center;
+  margin-bottom: 96px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 106px;
+    max-width: 1142px;
+    width: 100%;
+    list-style: none;
+
+    li {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 23px;
+      max-width: 192px;
+      position: relative;
+
+      &::before {
+        content: url(/src/assets/icons/cartao.svg);
+        position: absolute;
+        left: -40px;
+        top: 2px;
+      }
+
+      &:nth-child(1) {
+        max-width: 100px;
+      }
+
+      &:nth-child(2) {
+        max-width: 230px;
+        &::before {
+          content: url(/src/assets/icons/frete.svg);
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          content: url(/src/assets/icons/receba.svg);
+          top: 6px;
+          left: -32px;
+        }
+      }
+
+      &:nth-child(4) {
+        &::before {
+          content: url(/src/assets/icons/dropbox.svg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 117px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 267px;
+  height: 540px;
+  overflow: hidden;
+
+  .img {
+    position: absolute;
+    background: linear-gradient(181.18deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.15) 25.93%, rgba(0, 0, 0, 0.38) 61.16%, rgba(0, 0, 0, 0.71) 91.09%);
+    transition: .4s ease;
+
+    img {
+      position: relative;
+      z-index: -1;
+    }
+  }
+
+  span {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 34px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFF;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    transition: .4s ease-out;
+  }
+
+  button {
+    opacity: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-decoration: underline;
+    color: #FFF;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 285px;
+    transition: 1s ease;
+    cursor: pointer;
+  }
+
+  &:hover {
+    button {
+      opacity: 1;
+    }
+
+    span {
+      bottom: 276px;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    .img {
+      background: linear-gradient(181.19deg, rgba(0, 0, 0, 0.18) 1.02%, rgba(0, 0, 0, 0.57) 28.75%, rgba(0, 0, 0, 0.74) 67.96%, rgba(0, 0, 0, 0.71) 101.26%);
+    }
+  }
+}
+
+.carousel {
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  padding-bottom: 50px;
+  justify-content: center;
+  gap: 65px;
+  margin-bottom: 96px;
+
+  a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -12px;
+    right: 94px;
+    text-decoration: underline;
+    gap: 6px;
+
+    &::before {
+      content: url(/src/assets/icons/olho.svg);
+      margin-bottom: -6px;
+    }
+  }
+
+  .carouselButton {
+    background: url(/src/assets/icons/arrow.svg);
+    width: 24px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 360px;
+
+    &:first-of-type {
+      transform: rotate(180deg);
+    }
+
+  }
+}
+
+.carouselWrapper {
+  overflow: hidden;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1138px;
+    width: 100%;
+    margin: auto;
+    transition: .4s ease;
+    list-style: none;
+  }
+}
+
+.cardCarousel {
+  max-width: 557px;
+  min-width: 557px;
+  height: 781px;
+  position: relative;
+
+  .info {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 222px;
+    height: 184px;
+    left: 12px;
+    top: 12px;
+    color: #000;
+    padding: 18px 14px 23px 14px;
+
+    p {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    img {
+      margin: 16px 0 24px 0;
+      display: block;
+    }
+
+    span {
+      font-family: 'Aktiv Grotesk Ex';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: -1px;
+      display: block;
+
+      &:last-child {
+        color: #828282;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: normal;
+      }
+
+      strong {
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+        top: -6px;
+      }
+    }
+  }
+
+  .cardImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  button {
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    border: 2px solid #F2994A;
+    width: 268px;
+    height: 56px;
+    color: #F2994A;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s ease;
+    
+    &:hover {
+      background-color: #F2994A;
+      color: #FFF;
+    }
+  }
+}
+
+.indicators {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  li {
+    border-radius: 10px;
+    border: 1px solid #AA8232;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    &.active {
+      background-color: #AA8232;
+      width: 22px;
+    }
+  }
+}

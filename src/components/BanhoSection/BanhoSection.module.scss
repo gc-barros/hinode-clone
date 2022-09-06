@@ -1,0 +1,51 @@
+.container {
+  height: 813px;
+  background: url(/src/assets/img/woman-relaxing.png) no-repeat center / cover;
+  margin-top: 96px;
+  margin-bottom: 96px;
+
+  .wrapper {
+    max-width: 1155px;
+    margin: auto;
+    width: 100%;
+    
+    h2 {
+      color: #FFF;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 92px;
+      line-height: 92px;
+      max-width: 340px;
+      padding-top: 205px;
+    }
+    
+    p {
+      color: #FFF;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 137%;
+      max-width: 500px;
+      margin-top: 12px;
+      margin-bottom: 32px;
+    }
+
+    button {
+      width: 249px;
+      height: 50px;
+      background-color: transparent;
+      border: 2px solid #FFF;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11.7143px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+}
